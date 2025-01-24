@@ -45,9 +45,27 @@
             <p>Join our community of programmers and get help, share knowledge, and collaborate on projects.</p>
         </div>
     </div>
+    <div>
+        <audio autoplay loop>
+            <source src="avash.mp3" type="audio/mpeg">
+        </audio>
+    </div>
     <footer>
         <p>&copy; <script>document.write(new Date().getFullYear());</script> Programming of Stupid. All rights reserved.</p>
     </footer>
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    
+        // Disable certain key combinations
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && (event.key === 'u' || event.key === 's' || event.key === 'p')) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+    
 </body>
 </html>
 </style>
